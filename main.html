@@ -66,9 +66,20 @@
 		    padding: 100px 0;
 		    background-size: cover;
 		}
-		#skills { 
+		#work_experience { 
 			background-color: white;
-			/*background: url(images/home.jpg) 50% 0 fixed; **/
+			height: 100vh;
+			margin: 0 auto; 
+		    width: 100%; 
+		    position: relative; 
+		    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		    padding: 40px 0;
+		    padding-bottom: 100px;
+
+		}
+		#projects { 
+			background-color: white;
+			background: url(images/teal2.jpg) 50% 0 fixed; 
 			height: 100vh;
 			margin: 0 auto; 
 		    width: 100%; 
@@ -128,15 +139,15 @@
         <div class="navbar">
             <a href="./index.html" class="brand active">&nbsp;&nbsp;Andrew Sousa</a>
             <ul class="nav">
-                <li><a href="#skills">Experience</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#work_experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#connect">Say Hello</a></li>
   				<li class="nav">
   					<a href="#" data-toggle="dropdown" class="dropdown-toggle">Take a look at: <b class="caret"></b>&nbsp;&nbsp;</a>
 					<ul class="dropdown-menu">
-	                    <li><a href="./images/WebResume.pdf">My Resume</a></li>
-	                    <li><a href="#skills">My Projects</a></li>
-	                    <li><a href="#skills">My Experiences</a></li>
+	                    <li><a href="./images/WebResume.pdf">Resume</a></li>
+	                    <li><a href="#work_experience">Work Experience</a></li>
+	                    <li><a href="#projects">Projects</a></li>
 	                </ul>
             	</li>
             </ul>
@@ -160,9 +171,9 @@
 		<br><br><br>
 		   	<div class="hero-unit">
 	    		<h2>Hi, I'm Andrew</h2>
-	    		<p>I am an ambitious student leader at UMass who enjoys learning new engineering techniques, {CodingLanguages}, and technologies! I am entering my Senior year at UMass Amherst studying electrical engineering (EE). I am currently working with some remarkable people, doing some awesome things in which I am extremely thankful for. Scroll down to learn more about me; if I don't know you, be sure to send me a note, and if I do you know, don't hesitate to say Hi!
+	    		<p>I am an graduate student at UMass Amherst who enjoys learning new electrical engineering skills, designing electronic pc boards, and web design. My passions lie within embedded systems and electronics; I am always amazed when I see an electronic system produce physical quantities such as light or sound. I have had the unique opportunity to work on some amazing teams working on great projects and I continue to look forward working on life changing technologies for human-kind. Scroll down to learn more about me and the work I have done; don't hesitate to say hello. 
 	    		</p>
-	    		 <p style="float:right"><a class="btn btn-success" href="./images/WebResume.pdf">Check out my Resume &raquo;</a></p>
+	    		<!--<p style="float:right"><a class="btn btn-success" href="./images/WebResume.pdf">Check out my Resume &raquo;</a></p>-->
 	    	</div>
 	    	<div class="text-center">
 	    	<div align="center" class="btn-group">
@@ -173,53 +184,39 @@
 	</section>
 
 	<!-- Section #2 -->
-	<section id="skills" data-speed="4" data-type="background">
+	<section id="work_experience" data-speed="4" data-type="background">
 		<div class="container">
 			<div class="page-header">
-			  <h1>Experience <small>That I bring to the table</small></h1>
+			  <h1>Work Experience <small></small></h1>
 			</div>
 			<div style="padding-bottom: -1000px;" class="row-fluid">
 
-		        <div class="span4 well">
-	              <div class=" span4">
-			      	<img src="images/logo.png" alt="IEEE" />
+		        <div class="span12 well">
+		          <h2>Apple  <small>Summer - Winter 2015 </small></h2>
+		          <div id="leadership" class=" span2">
+			      	<img src="images/apple.png" alt="Apple Inc." />
 			      </div>
-		          <h2>Leadership</h2>
-		          <br><br>
-		          <p>"Where there is no vision, the people perish." —Proverbs 29:18. I hope to inspire people everyday through my work, attitude, and ideas. </p>
-		           <li>As the Vice President of UMass IEEE, I lead our team to opeing the first student-run snack shop, a wildly successful fall banquet, and a UMass's first hackathon: <a href="http://hackumass.com">HackUMass</a>  </li>
-		           <li>Currently leading the MicroMouse robics team to victory at the IEEE R1 student conference.</li>
-		           <li>I am involved with a group of leaders in engineering who are bringing the hack/entrepenurship culture to UMass.</li>
-		           <br>
-		          <p><a class="btn btn-success" href="./images/WebResume.pdf">View details &raquo;</a></p>
+		          <p>Worked on an awesome team tasked with measuring the data performance of New England's distribution center.</p>
 		        </div><!-- /.span4 -->
-		        <div class="span4 well">
-
-		          <h2>Electrical Engineering</h2>
-		          <br><br>
-		          <p>Currently learning immense amounts of information at a top ranked engineering program in MA. I have worked with technologies in all areas of this field. Some projects and skills attained:</p>
-		          <li>Micromouse: embedded systems, PCB design, robotics. </li>
-		          <li>Electronics Lab: design/build stereo amplifier, band pass filter w/ LEDs.</li>
-		          <li>Programming: designed & implemented a cache simulator (c), web design (CSS, HTML, JS), audio filtering (Matlab).</li>
-		          <br>
-		          <p><a class="btn btn-success" href="./images/WebResume.pdf">View details &raquo;</a></p>
+		        
+		        <div class="span12 well">
+		          <h2>Apple <small>Summer 2014 </small></h2>
+		          <div id="leadership" class=" span2">
+			      	<img src="images/apple.png" alt="Apple Inc." />
+			      </div>
+		          <p>At Apple I will be working as a network engineer on some of Apple's largest systems. I look forward to the experiences and the people I will meet while there!</p>
 		        </div><!-- /.span4 -->
-		        <div class="span4 well">
-
-		          <h2>Professional Work</h2>
+		        
+		        <div class="span12 well">
+		          <h2>Verizon Wireless <small>Summer 2013 </small></h2>
 		          <br><br>
-	          	  <div style="width:130px; height:100px;" id="leadership" class=" span5">
+	          	  <!--<div style="width:130px; height:100px;" id="leadership" class=" span5">-->
+	          	  <div id="leadership" class=" span2" style="margin-top:-70px;width:164px; height:120px;">
 	          	  	<br>
 			      	<img  src="images/verizon2.png" alt="Verizon Wireless" />
 			      </div>
 		          <p>Worked on an awesome team tasked with measuring the data performance of New England's distribution center.</p>
-		          <br>
-			      <div id="leadership" class=" span5">
-			      	<img src="images/apple.png" alt="Apple Inc." />
-			      </div>
-		          <p>At Apple I will be working as a network engineer on some of Apple's largest systems. I look forward to the experiences and the people I will meet while there!</p>
-		          <BR>
-		          <p><a class="btn btn-success" href="./images/WebResume.pdf">View details &raquo;</a></p>
+
 		        </div><!-- /.span4 -->
 	    	</div>	
 	  </div>
@@ -228,6 +225,52 @@
 
 		</div>
 	</section>
+
+
+
+<!-- Section #3 -->
+	<section id="projects" data-speed="4" data-type="background">
+		<div class="container">
+			<div class="page-header">
+			  <h1 style="color:white;">Projects <small></small></h1>
+			</div>
+			<div style="padding-bottom: -1000px;" class="row-fluid">
+			
+		        <div class="span4 well">
+		          <h2>Otto: The Personal Cameraman</h2>
+		          <br><br>
+		          <p>[Description] </p>
+		          <p>Click the link below to read about all of the details on our site. </p>
+		           <br>
+		          <p><a class="btn btn-success" href="http://www.ecs.umass.edu/ece/sdp/sdp15/team07/">Team Otto &raquo;</a></p>
+		        </div><!-- /.span4 -->
+		        <div class="span4 well">
+
+		          <h2>Bitcoin Coffee Machine</h2>
+		          <br><br>
+		          <p>[Description]</p>
+		          <li>Programming: designed & implemented a cache simulator (c), web design (CSS, HTML, JS), audio filtering (Matlab).</li>
+		          <br>
+		          <p><a class="btn btn-success" href="http://www.hackthebeanpot.com">Buy a Coffee! &raquo;</a></p>
+		        </div><!-- /.span4 -->
+		        <div class="span4 well">
+
+		          <h2>IEEE Micromouse Robot</h2>
+		          <br><br>
+		          <p>[Description]</p>
+		          <p>Gerber file of board</p>
+		          <br>
+		          <p><a class="btn btn-success" href="./images/WebResume.pdf">Gerber File &raquo;</a></p>
+		        </div><!-- /.span4 -->
+	    	</div>	
+	    </div>
+	  </div>
+
+	</div>
+
+		</div>
+	</section>
+
 
 
 	<!-- Blog Section #3 -->
@@ -280,7 +323,7 @@
 
 
 	    </div>
-	    <p style="padding-top: 120px;" id="foot"><br><br><br>&copy; 2015 Andrew C Sousa</p> 
+	    <p style="padding-top: 120px;" id="foot"><br><br><br>&copy; 2014-2016 Andrew Sousa</p> 
 	    <a id="scrollUp" href="#" style="float:right; margin-top:-30px; margin-right:30px; text-decoration:none;"><span class="glyphicon glyphicon-circle-arrow-up"></span> Back to Top</a>
 
 	</section>
