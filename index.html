@@ -1,42 +1,165 @@
-<!DOCTYPE HTML>
-<html>
-
-<!-- Google analytics tracking -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-47887663-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>ACS</title>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Andrew Sousa's Website</title>
+  <meta name="description" content="Personal Site">
+  <meta name="author" content="Andrew Sousa">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  
+  <!-- Google analytics tracking
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <script>
+//   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+//   ga('create', 'UA-47887663-1', 'auto');
+//   ga('send', 'pageview');
+// </script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
 
-	<div class="background">
-	</div>
+  <!-- Intro Header Section -->
+  <div class="container ">
+    <div class="row header">
+      <div class="twelve columns">
+        <div class="five columns intro-formatting">
+          <h4>Andrew Sousa</h4>
+          <p>Electrical Engineer with a passion to move society forward through development of novel system. Analog and digital circuit design intrigues me. Hacker by nature. Other current interests include cognitive science, biology/biotech, and economics.</p>
+          <a class="button" href="./images/WebResume.pdf">Resume</a>
+        </div>
+      </div>
+    </div>
+    <p class="photo-cred"> Photo Credit: Josh Sousa</p>
+ </div>
 
-	<!-- Some Hidden text for Google -->
-	<p style="visibility: hidden;">Andrew is an ambitious student leader and electrical engineer at UMass Amherst. He is passionate about hardware (electronics and embedded systems) and has a goal of changing the world. He has worked for top teir companies such as Apple and Verizon Wireless.</p>
 
-	<div class="mybox">
-		<div class="avatar">
-			<img class="face" src="./images/mountain.jpg">
-		</div>
-		<p class="name" align="center">Andrew Sousa</p>
-		<p class="tag-line" align="center">Leader, Motivator, Engineer</p>
-	</div>
-	<div class="nav">
-		<li onclick="location.href='./images/WebResume.pdf';"  style="cursor:pointer;" class="left">Resume</li>	
-		<li onclick="location.href='./main.html';"  style="cursor:pointer;" class="right">Full Site</li>	
-	</div>
+  <!-- My Projects -->
+  <div class="container body">
+    <h4>Projects</h4>
+    <p>These are some of the projects I have worked on.</p>
+    <div class="row ">
 
-	<div id="footer">&copy; 2014-2016 Andrew Sousa</div>
+      <div class="four columns project-box">
+        <h5>Otto: The Personal Cameraman</h5>
+        <p>Otto is the personal cameraman that introduces a new way to capture your life's most exciting moments. The system is an autonomous quadcopter that is designed to follow and record a user performing an individual action sport.</p>
+        <p>2015 Senior Design Project.</p>
+        <a class="button" href="http://www.ecs.umass.edu/ece/sdp/sdp15/team07/">Project Site</a>
+      </div>
 
+      <div class="four columns project-box">
+        <h5>Bitcoin Coffee Machine</h5>
+        <p>A friend and I hacked a Keurig machine to automatically pour a coffee once one was purchased online. I was responsible for the receiving system (hardware & software).</p>
+        <p>2014 HackBeanPot.</p>
+      </div>
+
+      <div class="four columns project-box">
+        <h5>IEEE Micromouse Robot</h5>
+        <p>An autonomous mouse that was tasked with navigating to the center of a 16x16 maze. I was responsible for the electrical system, namely the design of the pcb (including circuit and layout). Note, this was my first design.</p>
+        <p>2014 MicroMouse Competition. </p>
+        <a class="button" href="./images/umouse_board.jpg">Board Image</a>
+        <a class="button" href="./images/umouse_layout.png">Layout</a>
+      </div>
+
+    </div>
+     <div class="row">
+
+      <div class="four columns project-box">
+        <h5>HackUMass Founder</h5>
+        <p>Along with a team of twelve students, professors, and industry professionals we started the what is now (2016) the largest hacking event in Western MA. Our goal was to bring the hack/entrepreneurship culture to UMass. It was a great success.</p>
+        <p>2014 HackUMass I. </p>
+        <a class="button" href="http://hackumass.com">HackUMass</a>
+      </div>
+
+      <div class="four columns project-box">
+        <h5>IEEE / HKN Leadership</h5>
+        <p>As an undergrad at UMass I was the president of Eta Kappa Nu (HKN) as well as the Vice President of UMass IEEE. I lead our team to opening the first student-run snack shop, a wildly successful fall banquet, and a UMass's first hackathon, HackUMass. I also lead the MicroMouse robotics team to victory at the IEEE R1 student conference.</p>
+      </div>
+      <div class="four columns"></div>
+    </div>  
+  </div>
+
+
+  <!-- My Work   -->
+  <div class="container body">  
+    <h4>Experience Timeline</h4>
+    <p>A timeline of my notable experiences.</p>
+    <div class="bar"></div>
+    <div class="timeline">
+        <div class="entry">
+            <h1>2016</h1>
+            <a href='http://tulip.co'><img src="./images/Tulip.png"></img></a>
+            <p>HW Engineering Intern.</p>
+            <a href='http://umass.edu'><img src="./images/umass.jpg"></img></a>
+            <p>M.S.E.E. December 2016</p>
+        </div>
+        <div class="entry">
+            <h1>2015</h1>
+            <a href='http://apple.com'><img src="./images/apple.png"></img></a>
+            <p>EE 6-month intern on the special projects group.</p>
+            <a href='http://umass.edu'><img src="./images/umass.jpg"></img></a>
+            <p>B.S.E.E. May 2015</p> 
+        </div>
+         <div class="entry">
+            <h1>2014</h1>
+            <a href='http://apple.com'><img src="./images/apple.png"></img></a>
+            <p>Network Security intern.</p>
+        </div>
+        <div class="entry">
+            <h1>2013</h1>
+            <a href='http://vzw.com'><img src="./images/verizon.png"></img></a>
+            <p>Data Performance intern.</p>
+        </div>
+        <div class="entry">
+            <h1>2010</h1>
+            <h2>DHS</h2>
+            <p>Wrote my first game in Visual Basic, BlackJack.</p>
+        </div>
+    </div>
+  </div>
+
+  <!-- My Footer -->
+  <div class="container footer">
+      
+      <div class=" docs-example">
+        <div class="row">
+          <div class="three columns" style="background-color:blue"><h4>Links</h4></div>
+          <div class="three columns" style="background-color:blue">asdf</div>
+          <div class="three columns" style="background-color:blue">asdf</div>
+          <div class="three columns" style="background-color:blue">asdf</div>
+        </div> 
+      </div>
+    </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+</html>
