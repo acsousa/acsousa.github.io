@@ -31,6 +31,12 @@
   border-color: #606364;
 }
 
+.footer a {
+  text-decoration: none;
+  color: GREY;
+
+}
+
 /*
 .value-prop {
   margin-top: 1rem; }
@@ -129,13 +135,6 @@
     background: url(../images/me.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
-  }
-
-  .photo-cred {
-    text-align: right;
-    color: #A5ABAE;
-    font-weight: lighter;
-    font-size: 1rem;
   }
 
   .intro-formatting {
@@ -292,3 +291,16 @@
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
 }
+
+
+
+/* Larger enough */
+@media (min-width: 950px) {
+.photo-cred {
+    text-align: right;
+    color: #A5ABAE;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+}
+
