@@ -145,6 +145,14 @@
     background-color: rgba(255,255,255,0.7);
   }
 
+  .intro-project-formatting {
+    background: none;
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(255,255,255,0.7);
+  }
 
   /*.value-props {
     margin-top: 9rem;
@@ -176,6 +184,13 @@
     padding-top: 4rem;
     padding-right: 4rem;
     min-height: 520px;
+    background-color: rgba(255,255,255,0.7);
+  }
+  .intro-project-formatting {
+    text-align: left;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
     background-color: rgba(255,255,255,0.7);
   }
 
