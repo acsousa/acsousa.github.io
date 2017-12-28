@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Andrew Sousa's Website</title>
+  <meta name="description" content="Personal Site">
+  <meta name="author" content="Andrew Sousa">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/timeline.css">
+  
+  <!-- Google analytics tracking
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <script>
+//   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+//   ga('create', 'UA-47887663-1', 'auto');
+//   ga('send', 'pageview');
+// </script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<body>
+
+  <!-- Intro Header Section -->
+  <div class="container ">
+    <h3 style="margin-bottom:1rem;">Project: Current Sense</h3>
+    <h5 style="margin-bottom:1rem;color:grey">Winter 2018</h5>
+    <div class="row">
+        <div class="twelve columns intro-project-formatting">
+          <p>This current sense device ... is a small board that is designed to play music. Sounds are synthesized on an AtMega328, amplified with an LM386, and can be heard through the on-board speaker or on your headphones (through a 3.5mm jack). Below you can find images of the design, project schematic, and details about the fab. This design was based off of the PartyDuino, a 'noise-making' board designed in 2010 by a team of ECE students and M5; more at the <a target="_blank" href="http://umassamherstm5.org/partyduino-update">project site</a> .</p>
+        </div>
+    </div>
+ </div>
+
+
+  <!-- My Projects -->
+  <div class="container body" style="margin-top:5%;">
+    <h4 style="margin-bottom:1rem;">Images</h4>
+    <div class="row ">
+      <div class="six columns intro-project-formatting">
+        <a href="../images/minuteduino_1.jpg"> <img src="../images/minuteduino_1.jpg" style="width:auto; display:inline-block; width: 100%; height: auto;"> </a>
+         <p> The bare PC board.</p>
+      </div>
+
+      <div class="six columns intro-project-formatting">
+        <a href="../images/minuteduino_1.jpg"> <img src="../images/minuteduino_1.jpg" style="width:auto; display:inline-block; width: 100%; height: auto;"> </a>
+         <p> The assembled MinuteDuino.</p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="twelve columns intro-project-formatting">
+        <a href="../images/minuteduino_sch_rev1.pdf"> <img src="../images/minuteduino_sch_rev1.jpg" style="width:auto; display:inline-block; width: 100%; height: auto;"> </a>
+         <p> Schematic.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container body" style="margin-top:0%;">
+    <h4 style="margin-bottom:1rem;">Notes about the design</h4>
+      <div class="row">
+        <div class="twelve columns intro-project-formatting">
+          <ul>
+            <li><b>Audio Amp & Negative Supply IC:</b> the Arduino produces a 5Vpp signal out of each audio pin. The current drive capabilities of the arduino are low, certainly not enough to drive an 8-ohm speaker so we want to amplify the audio signal. We perform the amplification with the popular LM386 audio amplifier (<a target="_blank" href="http://www.pcbzone.net">datasheet</a>). The gain of this amplifier ranges from 26-46dB so we need to attenuate the input signal so that we don't experience any clipping at the output of the amp; this is the purpose of R102 and R103 (they form a voltage divider). Additionally, to get some more voltage swing at the output I supply pin 4 (the 'GND' pin) with -5V DC; I call this net 'VS'. Since this amplifier is a single supply device we have to play a trick for it to work properly. After the input ac-coupling capacitor, C104, we must connect all devices to our new GND net (VS) so that the circuit operates as if VS were GND. This effectively creates a 0-10V DC supply for the amplifier. </li>
+
+            <li><b>Board fabrication:</b> the board was fabricated at <a target="_blank" href="http://www.ti.com/lit/ds/symlink/lm386.pdf">PCB Zone</a> in New Zealand (Circuit Labs actually prints the pc board; they are the same company). This company is great for super quick turn PCB at very low prices. </li>
+
+            <li><b>Power LED:</b> 5mA current is quite bright. </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- My Footer -->
+  <div class="container footer">
+      
+      <div class=" docs-example">
+        <div class="row">
+          <div class="three columns" ><b>Contact: </b></div>
+          <div class="three columns" ><a href="mailto:acsousa@umass.edu?Subject=Hi%20Andrew" target="_top">Send Mail</a></div>
+          <div class="three columns"><a href="https://www.linkedin.com/in/andrewcsousa">LinkedIn</a></div>
+        </div> 
+      </div>
+    </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
